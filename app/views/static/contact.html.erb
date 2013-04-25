@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>4Tech Communications</title>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="fourtech.css" />
+
+<%= render "navheader" %> 
+ 
+<script src="scripts/jquery.textareaCounter.plugin.js" type="text/javascript"></script>
+<script src="scripts/jquery.validate.pack.js" type="text/javascript"></script>
+<script src="scripts/jquery.metadata.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var info;
+	$.metadata.setType("attr", "validate");
+	$(document).ready(function(){
+		var options = {
+			'maxCharacterSize': 500,
+			'originalStyle': 'originalTextareaInfo',
+			'warningStyle' : 'textboxwarning',
+			'warningNumber': 40,
+			'displayFormat' : '#input/#max'
+		};
+		$('#textbox').textareaCount(options);
+		$("#ContactForm").validate();
+		$("#sendbutton").click(function(){
+			$("#ContactForm").submit();
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<div id="container">
+	<%= render "header" %>
+    
+    <%= render "navmenu" %>     
+    
+    <div id="defaultbody">
+    
+    <p>Thank you for your interest in <strong>4TECH Communications.</strong></p>
+    <p>Please complete the information below and someone will contact you shortly.</p>
+	<p id="required">* required fields</p>
+    <form id="ContactForm" action="cgi-bin/formmail.pl" method="POST">
+		<table>
+			<tr>
+				<td id="inputname">*Reason for request:</td>
+				<td>
+					<input type="radio" name="Reason for request" validate="required:true" value="Solution Inquiry"/> Solution Inquiry
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="radio" name="Reason for request" value="Service Inquiry"/> Service Inquiry
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="radio" name="Reason for request" value="Affiliate Inquiry"/> Affiliate Inquiry
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="radio" name="Reason for request" value="Other"/> Other
+				</td>
+			</tr>
+			<tr>
+				<td><label for="Reason for request" class="error">Please select your reason for request.</label></td>
+			</tr>
+			<tr>
+				<td id="inputname">*First Name: </td>
+				<td>
+					<input type="text" name="firstname" class="required" value="" size="25" maxlength="50" /></br>
+				</td>
+			</tr>
+			<tr>
+				<td id="inputname">*Last Name: </td>
+				<td>
+					<input type="text" name="lastname" class="required" value="" size="25" maxlength="50" /></br>
+				</td>
+			</tr>
+			<tr>
+				<td id="inputname">*Email: </td>
+				<td>
+					<input type="text" name="email" class="required email" value="" size="25" maxlength="50" /></br>
+				</td>
+			</tr>
+			<tr>
+				<td id="inputname">*Phone: </td>
+				<td>
+					<input type="text" name="phone" class="required" value="" size="25" maxlength="50" /></br>
+				</td>
+			</tr>
+			<tr>
+				<td id="inputname">*Company Name: </td>
+				<td>
+					<input type="text" name="company" class="required" value="" size="25" maxlength="50" /></br>
+				</td>
+			</tr>
+			<tr>
+				<td id="inputname">What can 4TECH do for you?: </br></br></br></br></br></br></br></br></td>
+				<td>
+					<textarea id="textbox" name="message" cols="50" rows="10"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="Newsletter Signup" value="yes" /> Please sign me up for the 4Tech Newsletter
+			</tr>
+			<tr>
+				<td>
+					<input type="hidden" name="recipient" value="info@4techcomm.com" />
+					<input type="hidden" name="subject" value="4Tech Communications Website Inquiry" />
+					<input type="hidden" name="redirect" value="http://www.4techcomm.com/thankyou.shtml" />
+				</td>
+				<td>
+					<br><br>
+					<a href="#"><img src="images/send-button-one.png" id="sendbutton"></a>
+				</td>
+			</tr>
+		</table>
+	</form>
+    
+    </div>
+    
+    <div id="footerspace">
+    	<br />
+    </div>
+    
+    <%= render "footer" %>    
+
+</div>
+
+
+
+
+<br />
+
+</body>
+
+
+</html>
