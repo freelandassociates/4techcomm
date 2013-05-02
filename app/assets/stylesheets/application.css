@@ -52,7 +52,9 @@ a:visited
 	padding-left: 7px;
 	padding-top: 15px;
 	
-	background: white
+	background: white;
+
+	/*clear: both;*/
 	
 	/* background: #003; /* for non-css3 browsers */
 
@@ -62,13 +64,47 @@ a:visited
 
 }
 
+#headerimage {
+	/*background-color: gray;*/
+	float: left;
+	width: 250px;
+	height: 70px;
+}
+
+#phonenumber {
+	/*background-color: blue;*/
+	width: 690px;
+	float: left;
+	text-align: right;
+	font-size: 28px;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
 #affiliatelink
 {
+    /*background-color: red;*/
+    float: left;
     text-align: right;
-    padding-top: 20px;
-    padding-left: 570px;
+    padding-top: 15px;
     text-decoration: none;
-    color: #161E2E;
+    height: 20px;
+    width: 690px;
+    color: black;
+    /*color: #161E2E;*/
+}
+
+#affiliatelink a {
+	color: black;
+	background-color: white;
+	text-decoration: none;
+}
+
+
+#affiliatelink a:visited {
+	color: black;
+	background-color: white;
+	text-decoration: none;
 }
 
 #mainnavigation 
