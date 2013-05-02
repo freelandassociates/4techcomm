@@ -11,3 +11,289 @@
  *= require_self
  *= require_tree .
  */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #161E2E;
+}
+
+a:visited
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#container
+{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	
+	background: #CCC; /* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#EEEEEE'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#EEE)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #CCC,  #EEE); /* for firefox 3.6+ */ 
+	
+	color: #000;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#defaultbody
+{
+	padding: 10px;
+}
+
+#header 
+{	
+	height: 72px;
+	padding-left: 7px;
+	padding-top: 15px;
+	
+	background: white
+	
+	/* background: #003; /* for non-css3 browsers */
+
+	/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BBBBBB', endColorstr='#DDDDDD'); /* for IE */
+	/* background: -webkit-gradient(linear, left top, left bottom, from(#BBB), to(#DDD)); /* for webkit browsers */
+	/* background: -moz-linear-gradient(top,  #003,  #006); /* for firefox 3.6+ */ 
+
+}
+
+#affiliatelink
+{
+    text-align: right;
+    padding-top: 20px;
+    padding-left: 570px;
+    text-decoration: none;
+    color: #161E2E;
+}
+
+#mainnavigation 
+{
+	z-index: 1;
+	background-color: #414141;
+}
+
+#smoothmenu1
+{
+    display: inline;
+}
+
+.ie #searchbox
+{
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 4px;
+    margin-bottom: -3px;
+    display: inline-block;
+    text-align: right;
+}
+
+.gecko #searchbox
+{
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 4px;
+    margin-bottom: -2px;
+    display: inline-block;
+    text-align: right;
+}
+
+.chrome #searchbox
+{
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 2px;
+    margin-bottom: -2px;
+    display: inline-block;
+    text-align: right;
+}
+
+#slideshow
+{
+	float: left;
+	width: 360px;
+	height: 280px;
+	background: #EEE;
+	z-index: 50;
+}
+
+#fadeshow1
+{
+	z-index: 50;	
+}
+
+#welcome
+{
+	float: right;
+	width: 362px;
+	height: 260px;
+	padding: 10px;
+	font-size: 11.5pt;
+	background: #DDD;
+	color: #333;
+}
+
+#details
+{
+	clear: both;
+	font-family:Verdana, Geneva, sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 13pt;
+	padding-top: 20px;
+}
+
+#details a:link
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#detailheading
+{
+	position: relative;
+	width: 205px;
+	height: 30px;
+	padding-top: 7px;
+	background: #161E2E;
+	/* for IE */
+  	filter:alpha(opacity=70);
+  	/* CSS3 standard */
+  	opacity:0.7;
+}
+
+#detail1
+{
+	float: left;
+	margin: 0px 15px 0px 24px;
+	width: 205px;
+	height: 220px;
+	background-image:url('/images/voice.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+
+#detail2
+{
+	float: left;	
+	margin: 0px 15px;
+	width: 205px;
+	height: 220px;
+	background-image:url('/images/data.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+
+#detail3
+{
+	float: left;	
+	margin: 0px 15px;
+	width: 205px;
+	height: 220px;
+	background-image:url('/images/media.png');
+	background-repeat:no-repeat;
+	background-position:right top;}
+
+#detail4
+{
+	float: left;	
+	margin: 0px 15px;
+	width: 205px;
+	height: 220px;
+	background-image:url('/images/security.png');
+	background-repeat:no-repeat;
+	background-position:right top;
+}
+
+#detaillefttext
+{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 0px 0px 10px 20px;
+	width: 50%;
+	height: auto;
+	/*background: #BBB;*/
+	color: black;
+	font-size: 10.5pt;
+	text-align: justify;
+	font-family: Arial, Helvetica, "san-serif";
+
+}
+
+#detailimageright
+{
+	float: right;
+	width: auto;
+	height: auto;
+	padding-top: 60px;
+	/*padding-left: 20px;*/
+	padding-right: 20px;
+	/*margin: 20px;*/
+	/*background: #08B;*/
+	/*-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;*/
+}
+
+
+#detailquoteright
+{
+	float: right;
+	width: 460px;
+	height: 208px;
+	margin-right: 20px;
+	margin-top: 10px;
+	background: #EEE;
+	color: black;
+	padding: 20px;
+	font-family: serif;
+	font-size: 24pt;
+	font-weight: 200;
+	font-style: italic;
+	
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
+}
+
+#required
+{
+    color: Red;
+}
+
+#inputname
+{
+    text-align: right;
+    width: 200px;
+}
+
+#ContactForm label.error 
+{
+	margin-left: 10px;
+	width: auto;
+	display: none;
+	color: Red;
+}
+
+.textboxwarning
+{
+    color: Red;
+}
+
+#footerspace
+{
+	clear: both;	
+}
+
+#footer
+{
+	clear: both;
+	background: #444;
+	padding: 10px;
+	font-size: 10pt;
+}

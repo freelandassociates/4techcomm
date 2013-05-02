@@ -16,7 +16,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
-<script type="text/javascript" src="scripts/fadeslideshow.js">
+<script type="text/javascript" src="/scripts/fadeslideshow.js">
 
 /***********************************************
 * Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -32,10 +32,10 @@ var mygallery=new fadeSlideShow({
 	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
 	dimensions: [578, 280], //width/height of gallery in pixels. Should reflect dimensions of largest image
 	imagearray: [
-		["images/slide1.jpg", "", "", "Comment about networking."],
-		["images/slide2.jpg", "", "", "Comment about image 2."],
-		["images/slide3.jpg", "", "", "Comment about data."],
-		["images/slide4.jpg", "", "", "Comment about image 4."] //<--no trailing comma after very last image element!
+		["/images/slide1.jpg", "", "", "Comment about networking."],
+		["/images/slide2.jpg", "", "", "Comment about image 2."],
+		["/images/slide3.jpg", "", "", "Comment about data."],
+		["/images/slide4.jpg", "", "", "Comment about image 4."] //<--no trailing comma after very last image element!
 	],
 	displaymode: {type:'auto', pause:7000, cycles:0, wraparound:false},
 	persist: false, //remember last viewed slide and recall within same session?
