@@ -9,24 +9,24 @@
 
 <link rel="stylesheet" type="text/css" href="/fourtech.css" />
 
-<%= render "navheader" %> 
+<%= render "/static/navheader" %> 
  
 </head>
 
 <body>
 
 <div id="container">
-	<%= render "header" %>
+	<%= render "/static/header" %>
     
-    <%= render "navmenu" %>     
+    <%= render "/static/navmenu" %>     
     
 <div id="detaillefttext">
-<H2>File Digitization</H2>
-<p>Whether digitization has become mandated in your industry or your business just wants to save space and time, digitized filing has become a critical aspect for many businesses. With the right solutions for digitization coupled with the obvious benefits of simplification, let the 4Tech experts help you take full advantage of our digital world!</p>
+<H2></H2>
+<p>Thank you for your interest. We will be in touch with you shortly.</p>
+<p>Click <%= link_to "here", static_index_path %> to go back to the home page.</p>
 </div>
 
 <div id="detailimageright">
-<img src="/images/2315943.jpg">
 </div>
 
 
@@ -35,7 +35,7 @@
     	<br />
     </div>
     
-    <%= render "footer" %>    
+    <%= render "/static/footer" %>    
 
 </div>
 

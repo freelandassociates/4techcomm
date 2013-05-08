@@ -34,6 +34,12 @@ Fourtech::Application.routes.draw do
   get "static/partnerships"
   get "static/managementteam"
   get "static/contact"
+  get "static/voice"
+  get "static/data"
+  get "static/media"
+  get "static/security"
+
+  post "contact/sendmail"
 
 
   # The priority is based upon order of creation:
