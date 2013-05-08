@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
-  # default to: "info@4techcomm.com"
-  default to: "paulsimpsonparry@gmail.com"
+  default to: "info@4techcomm.com"
+  # default to: "paulsimpsonparry@gmail.com"
 
   def contact_from_website(reason_for_request, first_name, last_name, email,
 										phone, company, message, newsletter_signup)
