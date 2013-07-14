@@ -76,9 +76,11 @@ a:visited
 	width: 690px;
 	float: left;
 	text-align: right;
-	font-size: 28px;
+	font-size: 20px;
 	letter-spacing: 1px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: italic;
+	font-weight: bold;
 }
 
 #affiliatelink
